@@ -1,117 +1,112 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-
-
-   
-    height: 200px;
-    background-color: rgb(202, 154, 154);
-    color: black;
-
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
-
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-
-
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 
+
+/* Navbar */
 .nav {
-    display: flex;
-    flex: 1;
-    padding: 20px;
-    justify-content: space-between;
-    background-color: rgb(36, 54, 78);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+background-color: rgb(36, 54, 78);
+color: white;
 }
 
 .nav a {
-    text-decoration: none;
-    color: aliceblue;
-    justify-content: flex-start;
+text-decoration: none;
+color: white;
+margin: 0 10px;
 }
 
-.nav_logo {
-    justify-content: flex-start;
-    height: auto;
-
-}
-
+/* Header */
 .header {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-
+text-align: center;
+padding: 20px;
 }
 
+/* Main Content */
 .main {
-    display: flex;
-    flex:1;
-    padding: 20px;
-    background-color: blanchedalmond;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+background-color: blanchedalmond;
+
 }
-.main--header {
-    display: flex;
-    align-items: center;
-}
-
-
-
-
 
 .main__content {
-    padding: 20px;
-    align-items: center;
 
+text-align: center;
 }
 
-.main__img {
-    
-   
-    justify-content: center;
+.main__img img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
 }
 
+/* Secciones */
 .section {
-
-    padding: 10px;
-    gap: 10px;
-}
-.section-img {
-    width: auto;
-    max-height: 200px;
-    padding:20px;
+margin: 20px 0;
 }
 
+/* Aside */
 .aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+display:flex;
+gap:20px;
+padding: 20px;
 
 }
 
+/* Tabla Nutricional */
+.table {
+width: 100%;
+
+margin-top: 1em;
+}
+
+table, th, td {
+border: 1px solid #ddd;
+padding: 0.5em;
+}
+
+th {
+background-color:rgb(36, 54, 78);
+color: white;
+}
+
+/* Footer */
 .footer {
+text-align: center;
+padding: 1em;
+background-color: rgb(36, 54, 78);
+color: white;
+}
+
+/*Gallery*/
+.gallery {
     display: flex;
-    padding: 20px;
-    justify-content: center;
-    background-color: rgb(36, 54, 78);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+    justify-content: center; /* Centra los elementos en la fila horizontal*/
+    gap: 1.5em; /* Espacio entre las tarjetas */
+    width: 100%; /* Ocupar todo el ancho disponible */
+   /* Evita que se expanda demasiado en pantallas grandes */
+ 
+}
+
+.gallery__a {
+    text-decoration: none;
+    color: #333;
 
 }
 
-footer a {
-    text-decoration: none;
-    color: aliceblue;
-
+.gallery__ul {
+    font-size: 1em;
+    width:500px ;
+    
 }
