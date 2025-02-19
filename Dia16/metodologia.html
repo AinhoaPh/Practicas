@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Dia16/css/style.css">
+    <style>
+        /* 🔹 Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 🔹 Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* 🔹 HEADER */
+        .Header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .Header-logo {
+            width: 120px;
+        }
+
+        .Header-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .Nav-ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .Nav-ulLi { 
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;}
+
+    
+        .header__toggle {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        /* 🔹 GALERÍA */
+        .Main-gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 5 columnas */
+            grid-template-rows: repeat(5, auto);
+            /* 6 filas */
+            grid-gap: 10px;
+          
+        }
+
+        /* 🔹 Ubicación de cada imagen con grid-area */
+        .Main-item {
+            
+            
+
+        }
+
+
+
+        .Main-item--2f1c {
+            grid: ;
+
+        }
+
+
+
+        .Main-item--2f2c {
+            grid: ;
+
+        }
+        .Main-item--2f2c {
+            grid: span 2;
+
+        }
+
+
+        .M
+
+     {
+            grid-area: 1 / 5 / 2 / 6;
+
+        }
+
+
+
+        .Main-galleryImg5 {
+            grid-area: 2 / 1 / 3 / 2;
+
+        }
+
+
+
+        .Main-galleryImg6 {
+            grid-area: 2 / 2 / 3 / 3;
+
+        }
+
+
+
+        .Main-galleryImg7 {
+            grid-area: 3 / 3 / 4 / 4;
+
+        }
+
+
+
+
+        .Main-galleryImg8 {
+            grid-area: 2 / 4 / 3 / 6;
+
+        }
+
+
+
+
+        .Main-galleryImg9 {
+            grid-area: 3 / 1 / 4 / 2;
+
+        }
+
+
+
+
+        .Main-galleryImg10 {
+            grid-area: 3 / 2 / 4 / 3;
+
+        }
+
+
+
+
+        .Main-gallery1 {
+            grid-area: 4 / 3 / 5 / 5;
+
+        }
+
+
+
+        .Main-gallery2 {
+            grid-area: 3 / 5 / 5 / 6;
+
+        }
+
+        .Main-gallery3 {
+            grid-area: 4 / 1 / 5 / 2;
+
+        }
+
+        .Main-gallery4 {
+            grid-area: 4 / 2 / 5 / 3;
+
+        }
+
+        .Main-gallery5 {
+            grid-area: 5 / 3 / 6 / 4;
+
+        }
+
+        .Main-gallery6 {
+            grid-area: 5 / 4 / 6 / 6;
+
+        }
+
+
+
+        .Main-gallery7 {
+            grid-area: 5 / 1 / 6 / 2;
+
+        }
+
+
+        .Main-gallery8 {
+            grid-area: 5 / 2 / 6 / 3;
+
+        }
+
+
+        .Main-gallery9 {
+            grid-area: 6 / 3 / 7 / 4;
+
+        }
+
+
+
+        .Main-galleryImg20 {
+            grid-area: 6 / 4 / 7 / 5;
+
+        }
+
+
+
+        .Main-galleryImg21 {
+            grid-area: 6 / 5 / 7 / 6;
+
+        }
+
+
+        /* 🔹 Ajustes generales para las imágenes */
+        .Main-gallery-item {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+         /* FOOTER */
+         .Footer {
+            width: 100%;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .Footer-logo {
+            width: 120px;
+
+        }
+
+        .Footer-p {
+            font-size: 10px;
+            color: lightgrey;
+            text-align: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="Header">
+        <div class="Header-logo">
+            <img src="#" alt="Stockholm LOGO">
+        </div>
+        <nav class="Header-nav">
+            <ul class="Nav-ul">
+                <li class="Nav-ulLi">MAIN</li>
+                <li class="Nav-ulLi">ABOUT</li>
+                <li class="Nav-ulLi">CONTACT</li>
+            </ul>
+        </nav>
+        <button></button>
+    </header>
+    <main class="Main">
+        <section class="Main-gallery" >
+            <img src="#" alt="Imagen1" class="Main-item ">
+            <img src="#" alt="Imagen2" class="Main-item ">
+            <img src="#" alt="Imagen3" class="Main-item Grid-item--2f1c">
+            <img src="#" alt="Imagen4" class="Main-item ">
+            <img src="#" alt="Imagen5" class="Main-item Grid-item--2f2c ">
+            <img src="#" alt="Imagen6" class="Main-item ">
+            <img src="#" alt="Imagen7" class="Main-item ">
+            <img src="#" alt="Imagen8" class="Main-item ">
+            <img src="#" alt="Imagen9" class="Main-item Grid-item--2f1c">
+            <img src="#" alt="Imagen10" class="Main-item">
+            <img src="#" alt="Imagen11" class="Main-item">
+            <img src="#" alt="Imagen12" class="Main-item G">
+            <img src="#" alt="Imagen13" class="Main-item">
+            <img src="#" alt="Imagen14" class="Main-item">
+            <img src="#" alt="Imagen15" class="Main-item">
+            <img src="#" alt="Imagen16" class="Main-item">
+            <img src="#" alt="Imagen17" class="Main-item Grid-item--1f2c">
+            <img src="#" alt="Imagen18" class="Main-item">
+            <img src="#" alt="Imagen19" class="Main-item">
+            <img src="#" alt="Imagen20" class="Main-item">
+            <img src="#" alt="Imagen21" class="Main-item">
+
+        </section>
+    </main>
+    <footer class="Footer">
+        <img class="Footer-logo" src="#" alt="Stockholm LOGO">
+        <p class="Footer-p">Aliquam lorem ante, dapibus in, viverra quis, elit feugiat
+            Etiam sit tellus. Phasellus rutru nulla euter ameter
+            metus varius laoreet amet orci.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
